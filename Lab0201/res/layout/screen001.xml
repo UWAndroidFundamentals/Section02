@@ -1,0 +1,43 @@
+<!-- Linear Layout with vertical orientation -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Each child view appears below the previous one -->
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView1"
+        tools:context=".LinearLayoutExample" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView2"
+        tools:context=".LinearLayoutExample" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView3"
+        tools:context=".LinearLayoutExample" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView4"
+        tools:context=".LinearLayoutExample" />
+
+</LinearLayout>

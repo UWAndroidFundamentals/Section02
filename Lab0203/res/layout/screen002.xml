@@ -1,0 +1,53 @@
+<!-- Relative Layout with align option -->
+<!-- View is positioned inside relative to another view - not parent -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- This is the anchor view -->
+    <RelativeLayout
+        android:id="@+id/inside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp" >
+    </RelativeLayout>
+
+    <!-- Bottom of anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inside"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/bottom" />
+
+    <!-- Top of anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/inside"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/top" />
+
+    <!-- Left side of anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inside"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/left" />
+
+    <!-- Right side of anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/inside"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/right" />
+
+</RelativeLayout>

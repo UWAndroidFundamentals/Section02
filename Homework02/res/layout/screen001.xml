@@ -1,0 +1,38 @@
+<!-- Create both portrait and landscape versions of a layout coded
+	for German.  On the portrait side, align four TextView items
+	traveling down the page with the words "one", "two", "three", 
+	and "four".  On the landscape side, align the four TextView items
+	traveling across (horizontally) the page. -->
+	
+<!-- Start with a relative layout using match_parent for width/height -->	
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Create Linear Layout that is centered Horizontal and Vertical -->
+	<!-- Set orientation to vertical and width/height = wrap content -->
+
+     
+        <!-- Create text view that is fill parent wide and 
+        wrap content high.  Use center gravity.  Set text size 
+        to 30dp.  Set text to string value "one" -->
+    
+        <!-- Repeat for "two", "three", and "four" -->
+     
+        <!-- Create text view that is fill parent wide and 
+        wrap content high.  Use center gravity.  Set text size 
+        to 30dp.  Set text to string value "two" -->
+    
+        <!-- Create text view that is fill parent wide and 
+        wrap content high.  Use center gravity.  Set text size 
+        to 30dp.  Set text to string value "three" -->
+    
+        <!-- Create text view that is fill parent wide and 
+        wrap content high.  Use center gravity.  Set text size 
+        to 30dp.  Set text to string value "four" -->
+        
+    <!-- End Linear Layout -->
+
+<!-- End of Relative Layout -->    
+</RelativeLayout>

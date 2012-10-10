@@ -1,0 +1,10 @@
+<!-- Resources for Spanish language -->
+
+<resources>
+
+    <string name="app_name">Mi Aplicación</string>
+    <string name="hello_world">Hola Mundo!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_languages">Languages</string>
+
+</resources>

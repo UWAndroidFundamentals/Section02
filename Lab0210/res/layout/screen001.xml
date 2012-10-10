@@ -1,0 +1,69 @@
+<!-- ScrollView and LinearLayout show four images -->
+<!-- xhdpi - extra high density pixels per inch red car -->
+<!-- hdpi = high density pixels per inch - gray car -->
+<!-- mdpi = medium density pixels per inch - orange stripe car -->
+<!-- ldpi = low density pixels per inch - blue stripe car -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/px"
+            android:layout_height="@dimen/px"
+            android:contentDescription="@string/car"
+            android:padding="@dimen/padding_medium"
+            android:src="@drawable/smallcar" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="smallcar-px"
+            android:textSize="@dimen/textsize" />
+
+        <ImageView
+            android:layout_width="@dimen/px"
+            android:layout_height="@dimen/px"
+            android:contentDescription="@string/car"
+            android:padding="@dimen/padding_medium"
+            android:src="@drawable/largecar" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="largecar-px"
+            android:textSize="@dimen/textsize" />
+
+        <ImageView
+            android:layout_width="@dimen/dp"
+            android:layout_height="@dimen/dp"
+            android:contentDescription="@string/car"
+            android:padding="@dimen/padding_medium"
+            android:src="@drawable/smallcar" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="smallcar-dp"
+            android:textSize="@dimen/textsize" />
+
+        <ImageView
+            android:layout_width="@dimen/dp"
+            android:layout_height="@dimen/dp"
+            android:contentDescription="@string/car"
+            android:padding="@dimen/padding_medium"
+            android:src="@drawable/largecar" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="largecar-dp"
+            android:textSize="@dimen/textsize" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,241 @@
+<!--
+Project0101 - Snail Mail layout
+
+This project used the Relative, Linear, Table, and Frame layouts to design
+a standard envelope with return address, mailing address, stamp, and 
+postmark.
+-->
+
+<!-- Create a relative layout -->
+<!-- Make the width and height match the parent -->
+<!-- Don't forget the name space = http://schemas.android.com/apk/res/android -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Within the main parent relative layout, create a linear layout -->
+    <!-- Set the width and height to wrap the content -->
+    <!-- Set layout alignment to match the parent top left corner -->
+    <!-- Set the orientation to vertical -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <!-- Within the linear layout create a textview -->
+        <!-- Set the width and height to wrap the content -->
+        <!-- Set padding to "padding_small" from the dimen.xml file -->
+        <!-- Set text value to "return_name" from the strings.xml file -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_small"
+            android:text="@string/return_name" />
+
+        <!-- Create a second textview -->
+        <!-- Set the width and height to wrap the content -->
+        <!-- Set padding to "padding_small" from the dimen.xml file -->
+        <!-- Set text value to "return_address" from the strings.xml file -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_small"
+            android:text="@string/return_address" />
+
+        <!-- Create a second child linear layout -->
+        <!-- Set the width and height to wrap the content -->
+        <!-- Set orientation horizontal -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- Create a textview -->
+            <!-- Set the width and height to wrap the content -->
+            <!-- Set padding to "padding_small" from the dimen.xml file -->
+            <!-- Set text value to "return_city" from the strings.xml file -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:text="@string/return_city" />
+
+            <!-- Create a textview -->
+            <!-- Set the width and height to wrap the content -->
+            <!-- Set padding to "padding_small" from the dimen.xml file -->
+            <!-- Set text value to "return_state" from the strings.xml file -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:text="@string/return_state" />
+
+            <!-- Create a textview -->
+            <!-- Set the width and height to wrap the content -->
+            <!-- Set padding to "padding_small" from the dimen.xml file -->
+            <!-- Set text value to "return_zip" from the strings.xml file -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:text="@string/return_zip" />
+
+            <!-- close the child linear layout -->
+        </LinearLayout>
+        <!-- close the parent linear layout -->
+    </LinearLayout>
+
+    <!-- Create a frame layout -->
+    <!-- Set the width and height to wrap the content -->
+    <!-- Set layout alignment to match the parent top right corner -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <!-- Inside the frame layout, create an ImageView -->
+        <!-- Set the layout width to 100dp -->
+        <!-- Set the layout height to 50 dp -->
+        <!-- Set the content description to "stamp" -->
+        <!-- Set the image source to the drawable stamp -->
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="stamp"
+            android:src="@drawable/stamp" />
+
+        <!-- Create a second ImageView to lay on top of the previous image -->
+        <!-- Set the layout width to 100dp -->
+        <!-- Set the layout height to 50 dp -->
+        <!-- Set the content description to "postmark" -->
+        <!-- Set the image source to the drawable postmark -->
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="postmark"
+            android:src="@drawable/postmark" />
+        <!-- Close the frame layout -->
+    </FrameLayout>
+
+    <!-- Create a new TableLayout -->
+    <!-- Set the layout height and width to wrap the content -->
+    <!-- Center in parent layout -->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <!-- Create a TableRow entry -->
+        <!-- Set layout width and height to wrap content -->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- Create a TextView inside the TableRow entry -->
+            <!-- Set layout width and height to wrap content -->
+            <!-- Set padding to "padding_small" from the dimen.xml file -->
+            <!-- Set text value to "name" from the strings.xml file -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:text="@string/name" />
+
+            <!-- Close TableRow -->
+        </TableRow>
+
+        <!-- Create a TableRow entry -->
+        <!-- Set layout width and height to wrap content -->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- Create a TextView inside the TableRow entry -->
+            <!-- Set layout width and height to wrap content -->
+            <!-- Set padding to "padding_small" from the dimen.xml file -->
+            <!-- Set text value to "address" from the strings.xml file -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:text="@string/address" />
+
+            <!-- Close TableRow -->
+        </TableRow>
+
+        <!-- Create a TableRow entry -->
+        <!-- Set layout width and height to wrap content -->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- Create a LinearLayout inside the TableRow entry -->
+            <!-- Set layout width and height to wrap content -->
+            <!-- Set orientation to horizontal -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Create a TextView inside the LinearLayout entry -->
+                <!-- Set layout width and height to wrap content -->
+                <!-- Set padding to "padding_small" from the dimen.xml file -->
+                <!-- Set text value to "city" from the strings.xml file -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:text="@string/city" />
+
+                <!-- Create a TextView inside the LinearLayout entry -->
+                <!-- Set layout width and height to wrap content -->
+                <!-- Set padding to "padding_small" from the dimen.xml file -->
+                <!-- Set text value to "state" from the strings.xml file -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:text="@string/state" />
+
+                <!-- Create a TextView inside the LinearLayout entry -->
+                <!-- Set layout width and height to wrap content -->
+                <!-- Set padding to "padding_small" from the dimen.xml file -->
+                <!-- Set text value to "zip" from the strings.xml file -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:text="@string/zip" />
+
+                <!-- Close LinearLayout -->
+            </LinearLayout>
+            <!-- Close TableRow -->
+        </TableRow>
+        <!-- Close TableLayout -->
+    </TableLayout>
+    <!-- Close RelativeLayout -->
+
+</RelativeLayout>

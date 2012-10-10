@@ -1,0 +1,75 @@
+<!--
+ This exercise touches on multiple density images, language profiles 
+	and portarit / landscape orientation
+-->
+
+<!--
+    Move the images from "res/drawable" to the following directories:
+	res/drawable-hdpi (high density - 150% of medium density)
+		usa_72x72
+	res/drawable-fr-hdpi (high density - 150% of medium density)
+		france_72x72
+	res/drawable-es-hdpi (high density - 150% of medium density)
+		spain_72x72
+	res/drawable-ldpi (low density - 75% of medium density)
+		usa_36x36
+	res/drawable-fr-ldpi (low density - 75% of medium density)
+		france_36x36
+	res/drawable-es-ldpi (low density - 75% of medium density)
+		spain_36x36
+	res/drawable-mdpi (medium density)
+		usa_48x48
+	res/drawable-fr-mdpi (medium density)
+		france_48x48
+	res/drawable-es-mdpi (medium density)
+		spain_48x48
+	res/drawable-xhdpi (extra high density - 200% of medium density)
+		usa_96x96
+	res/drawable-fr-xhdpi (extra high density - 200% of medium density)
+		france_96x96
+	res/drawable-es-xhdpi (extra high density - 200% of medium density)
+		spain_96x96
+		
+	Rename each image to image.png.
+	This can be done through right click/refactor/rename (or F2).
+-->
+<!-- Display flag and name in single vertical column in portrait view -->
+<!-- Make a landscape copy with horizontal orientation -->
+<!-- Start with relative layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<!-- Create Linear Layout that is centered Horizontal and Vertical -->
+	<!-- Set orientation to vertical and width/height = wrap content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <!-- Create imageview that is 100 x 100 dp -->
+        <!-- Use image in drawable folder -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/image" />
+
+        <!-- Create text view that is fill parent wide and 
+        wrap content high.  Use center gravity.  Set text size 
+        to 30dp.  Set text to string value "country" -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/country" />
+    
+    <!-- End Linear Layout -->
+    </LinearLayout>
+
+<!-- End Relative Layout -->
+</RelativeLayout>

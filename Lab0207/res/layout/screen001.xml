@@ -1,0 +1,15 @@
+<!-- Frame Layout support all layout gravity types -->
+<!-- If no layout gravity supplied, defaults to upper left -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/none"
+        />
+
+</FrameLayout>

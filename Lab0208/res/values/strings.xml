@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Lab0208</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_margin_padding">MarginPadding</string>
+	<string name="nopadding">No Padding</string>
+	<string name="nomargin">No Margin</string>
+	<string name="tenDP">10 DP</string>
+	<string name="twentyDP">20 DP</string>
+	<string name="thirtyDP">30 DP</string>
+	
+	
+</resources>

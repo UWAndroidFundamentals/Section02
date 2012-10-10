@@ -1,0 +1,54 @@
+<!-- Relative Layout with individual align option -->
+<!-- View is positioned outside relative to another view - not parent -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- This is the anchor view -->
+    <TextView
+        android:id="@+id/centeritem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/center" />
+
+    <!-- Left and outside anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/centeritem"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/left" />
+
+    <!-- Right and outside anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/centeritem"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/right" />
+
+    <!-- Above and outside anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/centeritem"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/top" />
+
+    <!-- Below and outside anchor view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centeritem"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/bottom" />
+
+</RelativeLayout>

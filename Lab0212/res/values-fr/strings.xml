@@ -1,0 +1,10 @@
+<!-- Resources for french language -->
+
+<resources>
+
+    <string name="app_name">Mon Application</string>
+    <string name="hello_world">Bonjour le monde !</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_languages">Languages</string>
+
+</resources>

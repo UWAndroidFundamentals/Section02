@@ -1,0 +1,29 @@
+<!--
+ This exercise touches on multiple density images, language profiles 
+	and portarit / landscape orientation
+-->
+
+<!-- Move and rename all images (see portrait version for instructions) -->
+<!-- Display flag and name in single horizontal row in landscape view -->
+<!-- Make a landscape copy with horizontal orientation -->
+
+<!-- Start with Relative Layout and set orientation to vertical -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Create child Linear Layout centered both horizontal and vertical -->
+    <!-- Set width and height to wrap content -->
+    <!-- Set orientation horizontal -->
+ 
+        <!-- Set width to wrap content and height to fill parent -->
+        <!-- Use center gravity -->
+        <!-- Set text to string "country" -->
+ 
+        <!-- Set width and height to 100 dp -->
+        <!-- Set image to drawable "image" -->
+    <!-- End of Linear Layout -->
+ 
+<!-- End of Relative Layout -->
+</RelativeLayout>

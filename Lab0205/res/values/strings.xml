@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Lab0205</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_weight">Weight</string>
+	<string name="twentyfivepercent">This fills 25 percent of the screen.</string>
+	<string name="seventyfivepercent">This fills 75 percent of the screen.</string>
+</resources>

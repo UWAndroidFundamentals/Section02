@@ -1,0 +1,23 @@
+<!-- Frame Layout with two children: ImageView and Button -->
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+	<!-- ImageView is behind the Button -->
+    <ImageView
+        android:contentDescription="@string/treedescription"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="@dimen/padding_medium"
+        android:src="@drawable/palm_tree"
+        />
+    
+    <!-- Notice this button is on top of the Imageview -->
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/buttontext"
+        />
+</FrameLayout>

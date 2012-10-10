@@ -1,0 +1,49 @@
+<!-- Relative Layout with alignParent layout option -->
+<!-- Views are aligned relative to the parent view they are contained in -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Top of parent -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+	<!-- Bottom of parent -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    
+	<!-- Left side of parent -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/left"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        />
+    
+	<!-- Right side of parent -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    
+</RelativeLayout>

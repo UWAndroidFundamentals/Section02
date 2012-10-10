@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Project0201</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_project0201">Project0201</string>
+    <string name="return_name">Joe Smith</string>
+    <string name="return_address">100 Test Avenue</string>
+    <string name="return_city">Seattle</string>
+    <string name="return_state">WA</string>
+    <string name="return_zip">98104</string>
+	<string name="name">Bob Smith</string>
+    <string name="address">200 Test Avenue</string>
+    <string name="city">Bellevue</string>
+    <string name="state">WA</string>
+    <string name="zip">98004</string>
+    
+</resources>

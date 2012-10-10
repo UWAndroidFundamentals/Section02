@@ -1,0 +1,14 @@
+<!-- Frame Layout with right center layout gravity -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    >
+	<Button
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_gravity="right|center_vertical"
+		android:padding="@dimen/padding_medium"
+		android:text="@string/right" />
+
+</FrameLayout>

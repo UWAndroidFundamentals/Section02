@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Lab0204</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_frame_layout_example">FrameLayoutExample</string>
+	<string name="treedescription">image of a tree</string>
+	<string name="buttontext">Plant Me!</string>
+</resources>

@@ -1,0 +1,45 @@
+<!-- Linear Layout with horizontal orientation -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- Full text appears with good spacing for view 1 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView1"
+        tools:context=".LinearLayoutExample" />
+
+    <!-- Full text appears with good spacing for view 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView2"
+        tools:context=".LinearLayoutExample" />
+
+    <!-- Full text appears with REDUCED spacing for view 3 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView3"
+        tools:context=".LinearLayoutExample" />
+
+    <!-- Text does NOT appear on screen for view 4 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/TextView4"
+        tools:context=".LinearLayoutExample" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Lab0211</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_layout_orientation">LayoutOrientation</string>
+	<string name="item1">Item1</string>
+	<string name="item2">Item2</string>
+	<string name="item3">Item3</string>
+	<string name="item4">Item4</string>
+	<string name="initalstate">Inital State</string>
+</resources>

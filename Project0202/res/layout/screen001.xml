@@ -1,0 +1,53 @@
+<!-- 
+Create a layout using the features we discussed: 
+	layout_weight
+	gravity
+	layout_gravity
+	layout_margin
+	padding
+	visablity
+	
+	What is interesting to note is that the margin and padding 
+	requirements take preecidence over the explicit weight values.
+	
+-->
+
+
+<!-- Make Linear Layout the inital layout with match_parent for 
+	width and height and horizontal orientation -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+	<!-- Create button labled "side button" with no margin 
+	or padding but view gravity "top" -->    
+
+    <!-- Create child Linear Layout with vertical orientation -->
+
+        <!-- Create button labled "firstbutton" with:
+        wrap content for both hight and width
+        layout gravity towards the right
+        layout margin of 20 dp
+        layout weight of one fifth
+        padding of 20 dp
+        
+         -->
+    
+    	<!-- Create button labled "second button" similar to "firstbutton"
+    	but with visablity set to "gone"
+    	 -->
+    
+ 
+        <!-- Create final button labled "thirdbutton" with:
+        wrap content for both hight and width
+        layout gravity towards the left
+        layout margin of 20 dp
+        layout weight of four fifths
+        padding of 20 dp
+         -->
+ 
+    <!-- Close child Linear Layout -->    
+ 
+<!-- Close parent Linear Layout -->
+</LinearLayout>

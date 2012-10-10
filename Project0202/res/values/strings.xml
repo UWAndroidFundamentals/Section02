@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Project0202</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_project0202">Project0202</string>
+	<string name="topbutton">Top button</string>
+	<string name="sidebutton">Side button</string>
+	<string name="firstbutton">First button</string>
+	<string name="secondbutton">Second button</string>
+	<string name="thirdbutton">Third button</string>
+	
+</resources>

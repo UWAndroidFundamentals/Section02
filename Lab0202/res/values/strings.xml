@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Lab0202</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_table_layout_example">TableLayoutExample</string>
+	<string name="row1col1">row1-col1</string>
+	<string name="row1col2">row1-col2</string>
+	<string name="row1col3">row1-col3</string>
+	<string name="row2col1">row2-col1</string>
+	<string name="row2col2">row2-col2</string>
+	<string name="row3col1">row3-col1</string>
+	<string name="longtext">this is a very long column.  It fills the entire screen.</string>
+	<string name="shorttext">short</string>		
+</resources>
