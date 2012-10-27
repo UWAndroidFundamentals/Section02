@@ -36,21 +36,45 @@
 <!-- Display flag and name in single vertical column in portrait view -->
 <!-- Make a landscape copy with horizontal orientation -->
 <!-- Start with relative layout -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-	<!-- Create Linear Layout that is centered Horizontal and Vertical -->
-	<!-- Set orientation to vertical and width/height = wrap content -->
-  
-        <!-- Create imageview that is 100 x 100 dp -->
-        <!-- Use image in drawable folder -->
-        
-        <!-- Create text view that is fill parent wide and 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/country"
+        android:src="@drawable/image" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/country" />
+
+    </LinearLayout>
+
+
+    <!-- Create Linear Layout that is centered Horizontal and Vertical -->
+    <!-- Set orientation to vertical and width/height = wrap content -->
+
+
+    <!-- Create imageview that is 100 x 100 dp -->
+    <!-- Use image in drawable folder -->
+
+
+    <!--
+        Create text view that is fill parent wide and 
         wrap content high.  Use center gravity.  Set text size 
-        to 30dp.  Set text to string value "country" -->
-        
+        to 30dp.  Set text to string value "country"
+    -->
+
+
     <!-- End Linear Layout -->
-   
-<!-- End Relative Layout -->
-</RelativeLayout>
+
+
+    <!-- End Relative Layout -->
+
