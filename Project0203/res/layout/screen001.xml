@@ -49,29 +49,15 @@
         android:contentDescription="@string/country"
         android:src="@drawable/image" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/country" />
+        android:layout_gravity="center"
+        android:text="@string/country"
+        android:textSize="@dimen/ThirtyDP" />
 
     </LinearLayout>
-
-
-    <!-- Create Linear Layout that is centered Horizontal and Vertical -->
-    <!-- Set orientation to vertical and width/height = wrap content -->
-
-
-    <!-- Create imageview that is 100 x 100 dp -->
-    <!-- Use image in drawable folder -->
-
-
-    <!--
-        Create text view that is fill parent wide and 
-        wrap content high.  Use center gravity.  Set text size 
-        to 30dp.  Set text to string value "country"
-    -->
-
 
     <!-- End Linear Layout -->
 
