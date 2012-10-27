@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Project0203</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="menu_settings">Das Settings</string>
+    <string name="title_activity_project0203">Project0203</string>
+	<string name="country">Deutschland</string>
+	<string name="image">image</string>
+</resources>
